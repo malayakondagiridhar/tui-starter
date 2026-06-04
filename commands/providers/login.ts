@@ -6,5 +6,5 @@ export const loginCommand = new Command("login")
     .option('-p, --provider <providerName>', 'Name of the provider (gemini, claude etc)', '')
     .option('-a, --api_key <apiKey>', 'Your api key', '')
     .action((options) => {
-        console.log("logging into " + options.providerName)
+        console.log("logging into " + options.provider)
     })
